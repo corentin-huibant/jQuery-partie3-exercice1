@@ -6,14 +6,14 @@
     <title>jQuery : exercice 1 - partie 3</title>
   </head>
   <body>
-    <span>vous avez cliqué :</span> <span id="plus">0</span><span> fois !</span>
+    <input type="text" name="" value="">
     <br>
     <button type="button" name="button"> cliquez!</button>
     <script>
-    var number = 0;
-      $('button').click(function() {
-        number++;
-        $('#plus').text(number);
+    var number = 0; //déclaration d'une variable
+      $('button').click(function() { //si clique sur le button...
+        number++; //réfère à l'incrémentation de ma variable
+        $('input').val('vous avez cliqué ' + number + ' fois'); //l'élèment span à l'id #plus concatène ma variable nimber incrémentée
       })
     </script>
   </body>
